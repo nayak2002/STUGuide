@@ -1,0 +1,152 @@
+<!--doctype html-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Living</title>
+    <!--stylesheet------------------>
+    <link rel="stylesheet" type="text/css" href="livingstyle.css" />
+    <!--fav-icon------------------->
+    <link rel="shortcut icon" href="img/fav-icon.png" />
+</head>
+
+<body>
+    <!--main-section---------------------->
+    <section id="main">
+        <nav>
+            <a href="index.html"><img src="img/STU Logo R.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a>
+                        <ul class="dropdown">
+                          <li><a href="living.html">Living</a></li>
+                          <li><a href="grocery.html">eGrocery</a></li>
+                          <li><a href="restaurant.html">eFood</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Login_Signin_Page.html">Login/SignUp</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--background-img
+        <div class="bg">
+            <img src="img/livingbg.webp" />
+        </div>
+        ---------------->
+        <!--text--------------------->
+        <div class="text">
+            <strong>We Provide You <span class="type"></span></strong>
+            <p>Providing Comfort And Secruity In What You Choose</p>
+            <a href="#categories" class="btn">Explore</a>
+        </div>
+    </section>
+
+    <!--heading-------->
+    <div class="arrival-heading" id="categories">
+        <strong>Featured Categories</strong>
+        <p>We Provide For All</p>
+    </div>
+
+    <!--product-categories-slider---------------------->
+    <ul id="autoWidth" class="container" class="cs-hidden">
+        <!--box-1--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="Flats.html">
+                    <img src="img/flat 1.jpeg">
+                </a>
+            </div>
+            <span>Flats</span>
+        </li>
+        <!--box-2--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="PGs.html">
+                    <img src="img/pg 1.jpeg">
+                </a>
+            </div>
+            <span>PGs</span>
+        </li>
+        <!--box-3--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="Hostels.html">
+                    <img src="img/hostel 1.jpeg">
+                </a>
+            </div>
+            <span>Hostels</span>
+        </li>
+    </ul>
+
+    <script>
+        /*--For-Product-SLider----------------*/
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+
+    <!--services------------------------->
+    <section class="services">
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Express Selection</span>
+            <p>We provide quick, easy and seemless selection process</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Support 24/7</span>
+            <p>We support 24h a day</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>100% Money Back</span>
+            <p>You have 30 days to Return</p>
+        </div>
+
+    </section>
+    <!--footer---------------------------->
+    <footer>
+        <!--copyright-------------->
+        <span class="copyright">
+        </span>
+        <!--subcribe---------------->
+        <div class="subscribe">
+            <form>
+                <input type="email" placeholder="Example@gmail.com" required />
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
+
+    <!--using FontAwesome--------------->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+
+    <!--type.js---------------->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--script------------------->
+    <script>
+        var typed = new Typed('.type', {
+            strings: ['Professional', 'Modern', 'Fully Furnished', 'Flats', 'PGs', 'Hostels'],
+            typeSpeed: 100,
+            backSpeed: 70,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
